@@ -1,0 +1,5 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <rect x='6' y='6' width='88' height='88' rx='18' fill='none' stroke='#334155' stroke-width='4'/>
+  <circle cx='50' cy='50' r='24' fill='none' stroke='#a78bfa' stroke-width='4'/>
+  <text x='50' y='60' text-anchor='middle' font-family='ui-sans-serif, system-ui, -apple-system' font-size='26' fill='#e2e8f0'>Z</text>
+</svg>

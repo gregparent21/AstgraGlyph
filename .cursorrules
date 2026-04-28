@@ -1,0 +1,490 @@
+# .cursorrules — AstraGlyph Translator Project
+
+You are helping build a creative CS project for Cornell ARKEO 2812: Hieroglyphs to HTML.
+The project is called AstraGlyph: a science-fiction hybrid writing system and web translator.
+
+The project should be simple, polished, and presentation-friendly. Prioritize clarity, readable code, and a clean visual interface over unnecessary complexity.
+
+## Project Goal
+
+Build a small web app that lets a user translate basic English input into AstraGlyph, a fictional science-fiction writing system.
+
+AstraGlyph is a hybrid writing system:
+- Logograms represent whole sci-fi concepts such as planet, ship, AI, signal, colony, danger, time, memory, gate, void, and terraforming.
+- Phonetic glyphs represent sounds and are used as a fallback for names, unknown words, proper nouns, and terms not found in the logogram dictionary.
+- The system should demonstrate that writing systems can encode both meaning and sound.
+
+The app should support:
+1. English-to-AstraGlyph translation.
+2. Displaying glyph images in sequence.
+3. Showing a readable gloss underneath the glyph output.
+4. A glyph palette organized by category.
+5. Optional click-to-build or drag-and-drop construction of AstraGlyph phrases.
+6. A clean explanation page describing how the writing system works.
+
+## Tech Stack
+
+Use a simple frontend stack unless otherwise specified.
+
+Preferred:
+- React
+- JavaScript, not TypeScript
+- Tailwind CSS
+- Vite or Next.js, depending on the existing project setup
+
+Avoid overengineering. This is a creative class project, not a production translator.
+
+## Folder Structure
+
+Use this structure for source files and image assets:
+
+```txt
+src/
+  components/
+    Translator.jsx
+    GlyphOutput.jsx
+    GlyphPalette.jsx
+    GlyphCard.jsx
+    ExplanationPanel.jsx
+  data/
+    logograms.js
+    phonetics.js
+    translatorRules.js
+  utils/
+    translate.js
+    tokenize.js
+  pages/
+    Home.jsx
+  App.jsx
+  main.jsx
+
+public/
+  glyphs/
+    logograms/
+      space/
+      technology/
+      life/
+      abstract/
+    phonetics/
+      vowels/
+      consonants/
+      blends/
+```
+
+If using Next.js, adapt the `src/pages` structure to the Next.js app/page conventions, but preserve the same data and asset organization.
+
+## Image Storage Rules
+
+All glyphs should be stored as image files inside `public/glyphs`.
+
+Do not hardcode long SVG strings directly into React components unless specifically requested. Prefer storing glyphs as `.svg` files and referencing them through paths.
+
+Use simple, consistent file names:
+- lowercase
+- kebab-case
+- no spaces
+- clear category names
+
+Examples:
+
+```txt
+public/glyphs/logograms/space/star.svg
+public/glyphs/logograms/space/planet.svg
+public/glyphs/logograms/technology/ship.svg
+public/glyphs/logograms/technology/ai.svg
+public/glyphs/logograms/life/colony.svg
+public/glyphs/logograms/abstract/time.svg
+
+public/glyphs/phonetics/vowels/a.svg
+public/glyphs/phonetics/vowels/e.svg
+public/glyphs/phonetics/vowels/ai.svg
+
+public/glyphs/phonetics/consonants/k.svg
+public/glyphs/phonetics/consonants/r.svg
+public/glyphs/phonetics/consonants/s.svg
+
+public/glyphs/phonetics/blends/sh.svg
+public/glyphs/phonetics/blends/th.svg
+public/glyphs/phonetics/blends/qu.svg
+```
+
+When referencing images from React, use public paths like:
+
+```js
+"/glyphs/logograms/space/star.svg"
+"/glyphs/phonetics/vowels/a.svg"
+```
+
+Do not import public images unless the project setup requires it.
+
+## Data Model
+
+Represent each glyph in structured JavaScript data files.
+
+### Logograms
+
+Create `src/data/logograms.js`.
+
+Each logogram should have:
+- `id`
+- `label`
+- `category`
+- `keywords`
+- `image`
+- `gloss`
+- `description`
+
+Example:
+
+```js
+export const logograms = [
+  {
+    id: "ship",
+    label: "Ship",
+    category: "technology",
+    keywords: ["ship", "spacecraft", "vessel", "shuttle"],
+    image: "/glyphs/logograms/technology/ship.svg",
+    gloss: "SHIP",
+    description: "A spacecraft or traveling vessel."
+  },
+  {
+    id: "planet",
+    label: "Planet",
+    category: "space",
+    keywords: ["planet", "world"],
+    image: "/glyphs/logograms/space/planet.svg",
+    gloss: "PLANET",
+    description: "A world or planetary body."
+  }
+];
+```
+
+Use these logogram categories:
+- `space`
+- `technology`
+- `life`
+- `abstract`
+
+Recommended logogram list:
+- Space: star, planet, moon, void, orbit, galaxy, gate, horizon
+- Technology: ship, engine, ai, drone, station, shield, weapon, code
+- Life: human, alien, colony, council, crew, home, exile, contact
+- Abstract: time, memory, signal, knowledge, danger, discovery, unknown, return, transformation, survival, terraforming
+
+### Phonetics
+
+Create `src/data/phonetics.js`.
+
+Each phonetic glyph should have:
+- `id`
+- `sound`
+- `category`
+- `image`
+- `example`
+- `description`
+
+Example:
+
+```js
+export const phonetics = [
+  {
+    id: "a",
+    sound: "A",
+    category: "vowel",
+    image: "/glyphs/phonetics/vowels/a.svg",
+    example: "Astra",
+    description: "Open vowel sound."
+  },
+  {
+    id: "sh",
+    sound: "SH",
+    category: "blend",
+    image: "/glyphs/phonetics/blends/sh.svg",
+    example: "ship",
+    description: "Blended sound used in words like ship and shield."
+  }
+];
+```
+
+Use these phonetic categories:
+- `vowel`
+- `consonant`
+- `blend`
+
+Use this final phonetic set:
+
+Vowels:
+- A
+- E
+- I
+- O
+- U
+- AI
+
+Consonants:
+- B
+- D
+- F
+- G
+- H
+- K
+- L
+- M
+- N
+- P
+- R
+- S
+- T
+- V
+- W
+- Y
+- Z
+
+Blends:
+- SH
+- CH
+- TH
+- ST
+- TR
+- QU
+
+## Translation Logic
+
+Create the main translation function in `src/utils/translate.js`.
+
+The translator should:
+
+1. Normalize user input:
+   - lowercase
+   - remove punctuation except apostrophes if needed
+   - split into words
+
+2. Check if each word matches a logogram keyword.
+   - If yes, output the logogram.
+   - If no, output a sequence of phonetic glyphs.
+
+3. For unknown words, convert into phonetic symbols using longest-match-first logic.
+
+Longest-match-first matters because blends should be detected before individual letters.
+
+Check phonetic blends in this order:
+- qu
+- sh
+- ch
+- th
+- st
+- tr
+- ai
+
+Then check single-character phonetic symbols.
+
+Example:
+- "ship" should become SH-I-P, not S-H-I-P
+- "quantum" should become QU-A-N-T-U-M
+- "astra" should become A-ST-R-A
+- "earth" can become E-A-R-TH or E-R-TH depending on simplification
+
+Return an array of token objects.
+
+Example output shape:
+
+```js
+[
+  {
+    type: "logogram",
+    id: "ship",
+    label: "Ship",
+    image: "/glyphs/logograms/technology/ship.svg",
+    gloss: "SHIP",
+    sourceWord: "ship"
+  },
+  {
+    type: "phonetic",
+    id: "a",
+    label: "A",
+    image: "/glyphs/phonetics/vowels/a.svg",
+    gloss: "A",
+    sourceWord: "astra"
+  }
+]
+```
+
+## Tokenization Rules
+
+Create `src/utils/tokenize.js`.
+
+Keep tokenization simple:
+- Convert punctuation to spaces.
+- Collapse repeated spaces.
+- Preserve words and basic contractions only if needed.
+- Do not try to fully parse English grammar.
+
+This is not intended to be a perfect language parser. It is a demonstrative writing-system translator.
+
+## UI Requirements
+
+The interface should be visually connected to the sci-fi writing system.
+
+Style goals:
+- clean
+- dark or space-inspired background
+- readable panels
+- no clutter
+- responsive layout
+- large glyph output
+
+Recommended layout:
+- Main panel: text input and translated glyph output
+- Sidebar panel: glyph palette and explanation
+- On mobile, stack panels vertically
+
+Core components:
+
+### `Translator.jsx`
+
+Responsibilities:
+- Manage input text state.
+- Call the translation function.
+- Pass output tokens to `GlyphOutput`.
+- Include preset example buttons.
+
+### `GlyphOutput.jsx`
+
+Responsibilities:
+- Render glyph images in order.
+- Display gloss text underneath each glyph.
+- Group phonetic sequences visually when they come from the same unknown word if possible.
+- Render a placeholder if an image is missing.
+
+### `GlyphPalette.jsx`
+
+Responsibilities:
+- Show all available logograms and phonetic glyphs.
+- Group by category:
+  - Space
+  - Technology
+  - Life
+  - Abstract
+  - Vowels
+  - Consonants
+  - Blends
+
+### `GlyphCard.jsx`
+
+Responsibilities:
+- Render one glyph image, label, gloss/sound, and optional description.
+- Use a consistent card style.
+
+### `ExplanationPanel.jsx`
+
+Responsibilities:
+- Explain that AstraGlyph is a hybrid writing system.
+- Explain logograms and phonetics.
+- Explain the shape motif logic:
+  - circles = worlds, systems, cycles
+  - ellipses = orbits, gates, transmission
+  - squares = machines, code, storage
+  - triangles = ships, direction, action, warning
+  - dots = stars, nodes, settlements, individuals
+  - lines = motion, relation, connection, signal
+
+## Click-to-Build / Drag-and-Drop Mode
+
+This feature is optional. If implemented, keep it simple.
+
+A simple click-to-build implementation is preferred:
+- Click a glyph in the palette to add it to the output phrase.
+- Add a clear button.
+- Add a remove button on each selected glyph.
+
+If actual drag-and-drop is implemented, prefer native browser drag-and-drop or a small, well-maintained React library.
+
+Do not let this feature distract from the main translator.
+
+## Visual Design
+
+Use Tailwind CSS.
+
+Recommended styling:
+- dark background: near-black or deep navy
+- cards with rounded corners
+- subtle borders
+- strong spacing
+- large glyph images
+- readable white or light-gray text
+- accent color can be cyan, violet, or pale blue
+
+Do not make the interface overly neon or hard to read.
+
+Example Tailwind classes:
+- `bg-slate-950`
+- `text-slate-100`
+- `border-slate-700`
+- `rounded-2xl`
+- `shadow-lg`
+- `p-4`
+- `grid`
+- `gap-4`
+
+## Presentation-Friendly Features
+
+Because this is for a 5-minute class presentation, include:
+- A default example sentence button.
+- A few preset sci-fi example phrases.
+- A visible explanation of what the output means.
+- Tooltips or small descriptions for glyphs.
+- A clean "How it works" section.
+
+Suggested example sentences:
+- "The ship enters the gate"
+- "The AI remembers Earth"
+- "The colony sends a warning"
+- "The alien returns from the void"
+- "We terraform the planet"
+- "Astra sends a signal"
+
+## Writing-System Explanation
+
+Include this explanation somewhere in the app, either on the homepage or in an explanation panel:
+
+AstraGlyph is a hybrid science-fiction writing system. Its logograms represent common interstellar ideas such as planets, ships, artificial intelligence, signals, colonies, and time. Its phonetic symbols are used for names and unfamiliar words. This makes AstraGlyph a mixed system: it can represent meaning directly, but it can also represent sound when needed.
+
+The system makes the point that writing is not just speech written down. Writing systems make choices about what deserves to be encoded: sound, meaning, category, memory, technology, or cultural worldview. A spacefaring civilization might prefer a script that is partly visual and conceptual because it would need to communicate across planets, species, machines, and spoken languages.
+
+## Code Quality Rules
+
+- Keep components small.
+- Avoid large monolithic files.
+- Use descriptive variable names.
+- Keep translation logic separate from rendering logic.
+- Do not duplicate glyph data across multiple files.
+- Use `map`, `filter`, and clean object structures where appropriate.
+- Add comments only where they clarify non-obvious logic.
+- Avoid unnecessary dependencies.
+- Do not implement backend code unless the user specifically asks for it.
+
+## Error Handling
+
+If a glyph image is missing:
+- Render a placeholder box with the glyph label.
+- Do not crash the app.
+
+If a word cannot be translated phonetically:
+- Use the `unknown` logogram if available.
+- Show the original word in the gloss.
+
+## Future Extension Ideas
+
+Do not implement these unless specifically requested:
+- Determinative/category markers
+- Sentence-level circular layout inspired by nonlinear writing
+- Export output as image
+- Save custom glyph phrases
+- True grammar parsing
+- Backend database
+- User accounts
+
+## Final Reminder
+
+This project should feel like a thoughtful creative writing-system artifact first and a CS project second.
+The code should support the course argument: writing systems encode cultural priorities, not just sounds.
