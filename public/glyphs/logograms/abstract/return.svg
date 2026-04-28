@@ -1,4 +1,8 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <path d='M68 36 C58 26 42 26 32 36 C22 46 22 62 32 72 C42 82 58 82 68 72' fill='none' stroke='#67e8f9' stroke-width='4' stroke-linecap='round'/><path d='M30 36 H46' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/><path d='M30 36 L38 28' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/><path d='M30 36 L38 44' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: return">
+  <title>AstraGlyph logogram: return</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <ellipse cx="128.00" cy="120.00" rx="48.30" ry="31.50" />
+    <polygon points="83.90,120.00 113.30,105.30 113.30,134.70" fill="black" stroke="black" />
+  </g>
 </svg>

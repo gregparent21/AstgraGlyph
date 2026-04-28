@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: galaxy">
+  <title>AstraGlyph logogram: galaxy</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="128.00" cy="120.00" r="7.35" fill="black" stroke="black" />
+    <circle cx="90.20" cy="99.00" r="5.25" fill="black" stroke="black" />
+    <circle cx="165.80" cy="99.00" r="5.25" fill="black" stroke="black" />
+    <circle cx="90.20" cy="141.00" r="5.25" fill="black" stroke="black" />
+    <circle cx="165.80" cy="141.00" r="5.25" fill="black" stroke="black" />
+    <ellipse cx="128.00" cy="120.00" rx="60.90" ry="33.60" />
+  </g>
+</svg>

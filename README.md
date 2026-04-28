@@ -1,6 +1,6 @@
 # AstraGlyph
 
-## Final Project for Cornell's ARKEO 2818: Hieroglyphics to HTML.
+## Final Project for Cornell's ARKEO 2812: Hieroglyphics to HTML.
 
 I designed my own Sci-fi themed writing system called AstraGlyph. The following is a program to translate English in to my language. 
 

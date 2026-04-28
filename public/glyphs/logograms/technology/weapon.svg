@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: weapon">
+  <title>AstraGlyph logogram: weapon</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polygon points="174.20,120.00 123.80,94.80 123.80,145.20" />
+    <line x1="75.50" y1="120.00" x2="132.20" y2="120.00" />
+    <line x1="90.20" y1="103.20" x2="90.20" y2="136.80" />
+  </g>
+</svg>

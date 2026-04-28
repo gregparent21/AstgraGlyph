@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: engine">
+  <title>AstraGlyph logogram: engine</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="90.20" y="99.00" width="50.40" height="42.00" />
+    <polygon points="184.70,120.00 138.50,96.90 138.50,143.10" />
+    <line x1="90.20" y1="101.10" x2="65.00" y2="101.10" />
+    <line x1="90.20" y1="138.90" x2="65.00" y2="138.90" />
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: transformation">
+  <title>AstraGlyph logogram: transformation</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="102.80" cy="120.00" r="21.00" />
+    <line x1="123.80" y1="120.00" x2="149.00" y2="120.00" />
+    <polygon points="184.70,120.00 146.90,101.10 146.90,138.90" />
+  </g>
+</svg>

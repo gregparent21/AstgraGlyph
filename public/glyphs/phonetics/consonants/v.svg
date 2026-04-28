@@ -1,5 +1,8 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='6' y='6' width='88' height='88' rx='18' fill='none' stroke='#334155' stroke-width='4'/>
-  <circle cx='50' cy='50' r='24' fill='none' stroke='#a78bfa' stroke-width='4'/>
-  <text x='50' y='60' text-anchor='middle' font-family='ui-sans-serif, system-ui, -apple-system' font-size='26' fill='#e2e8f0'>V</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph phonetic symbol: v">
+  <title>AstraGlyph phonetic symbol: v</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polygon points="128.00,143.10 104.90,96.90 151.10,96.90" />
+    <line x1="98.60" y1="120.00" x2="157.40" y2="120.00" />
+  </g>
 </svg>

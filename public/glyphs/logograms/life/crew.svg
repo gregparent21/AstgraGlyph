@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: crew">
+  <title>AstraGlyph logogram: crew</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="107.00" cy="103.20" r="6.30" fill="black" stroke="black" />
+    <circle cx="149.00" cy="103.20" r="6.30" fill="black" stroke="black" />
+    <circle cx="128.00" cy="136.80" r="6.30" fill="black" stroke="black" />
+    <line x1="107.00" y1="103.20" x2="149.00" y2="103.20" />
+    <line x1="107.00" y1="103.20" x2="128.00" y2="136.80" />
+    <line x1="149.00" y1="103.20" x2="128.00" y2="136.80" />
+  </g>
+</svg>

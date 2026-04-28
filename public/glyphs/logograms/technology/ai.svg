@@ -1,4 +1,12 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <rect x='28' y='28' width='44' height='44' rx='10' fill='none' stroke='#67e8f9' stroke-width='4'/><path d='M36 44 H64 M36 56 H64' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/><circle cx='36' cy='36' r='3' fill='#67e8f9'/><circle cx='64' cy='36' r='3' fill='#67e8f9'/><circle cx='36' cy='64' r='3' fill='#67e8f9'/><circle cx='64' cy='64' r='3' fill='#67e8f9'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: ai">
+  <title>AstraGlyph logogram: ai</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="90.20" y="82.20" width="75.60" height="75.60" />
+    <circle cx="128.00" cy="120.00" r="8.40" fill="black" stroke="black" />
+    <line x1="128.00" y1="82.20" x2="128.00" y2="57.00" />
+    <line x1="128.00" y1="157.80" x2="128.00" y2="183.00" />
+    <line x1="90.20" y1="120.00" x2="65.00" y2="120.00" />
+    <line x1="165.80" y1="120.00" x2="191.00" y2="120.00" />
+  </g>
 </svg>

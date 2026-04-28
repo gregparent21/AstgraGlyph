@@ -1,4 +1,8 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <circle cx='50' cy='52' r='20' fill='none' stroke='#67e8f9' stroke-width='4'/><ellipse cx='50' cy='52' rx='34' ry='14' fill='none' stroke='#a78bfa' stroke-width='4' transform='rotate(-18 50 52)'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: planet">
+  <title>AstraGlyph logogram: planet</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="128.00" cy="120.00" r="46.20" />
+    <circle cx="128.00" cy="120.00" r="7.35" fill="black" stroke="black" />
+  </g>
 </svg>

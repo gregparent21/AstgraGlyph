@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: council">
+  <title>AstraGlyph logogram: council</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="128.00" cy="94.80" r="6.30" fill="black" stroke="black" />
+    <circle cx="102.80" cy="136.80" r="6.30" fill="black" stroke="black" />
+    <circle cx="153.20" cy="136.80" r="6.30" fill="black" stroke="black" />
+    <polygon points="128.00,80.10 83.90,168.30 172.10,168.30" />
+  </g>
+</svg>

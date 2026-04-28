@@ -1,4 +1,9 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <path d='M50 18 L82 78 H18 Z' fill='none' stroke='#67e8f9' stroke-width='4' stroke-linejoin='round'/><path d='M50 40 V58' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/><circle cx='50' cy='68' r='3' fill='#a78bfa'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: danger">
+  <title>AstraGlyph logogram: danger</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polygon points="128.00,82.20 90.20,157.80 165.80,157.80" />
+    <line x1="128.00" y1="105.30" x2="128.00" y2="134.70" />
+    <circle cx="128.00" cy="149.40" r="3.78" fill="black" stroke="black" />
+  </g>
 </svg>

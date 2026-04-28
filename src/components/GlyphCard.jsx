@@ -33,7 +33,7 @@ export default function GlyphCard({ glyph, variant = "palette", onClick }) {
             <img
               src={glyph.image}
               alt={title}
-              className="h-10 w-10 opacity-95"
+              className="h-10 w-10 opacity-95 invert hue-rotate-180 brightness-110"
               onError={() => setImgOk(false)}
             />
           ) : (

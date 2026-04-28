@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: code">
+  <title>AstraGlyph logogram: code</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="90.20" y="82.20" width="75.60" height="75.60" />
+    <circle cx="111.20" cy="103.20" r="4.20" fill="black" stroke="black" />
+    <circle cx="144.80" cy="103.20" r="4.20" fill="black" stroke="black" />
+    <circle cx="111.20" cy="136.80" r="4.20" fill="black" stroke="black" />
+    <circle cx="144.80" cy="136.80" r="4.20" fill="black" stroke="black" />
+    <line x1="111.20" y1="103.20" x2="144.80" y2="103.20" />
+    <line x1="111.20" y1="136.80" x2="144.80" y2="136.80" />
+  </g>
+</svg>

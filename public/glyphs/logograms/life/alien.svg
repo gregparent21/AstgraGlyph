@@ -1,4 +1,11 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <path d='M50 24 C34 24 26 38 26 52 C26 70 38 80 50 80 C62 80 74 70 74 52 C74 38 66 24 50 24 Z' fill='none' stroke='#67e8f9' stroke-width='4'/><ellipse cx='40' cy='52' rx='6' ry='10' fill='none' stroke='#a78bfa' stroke-width='4'/><ellipse cx='60' cy='52' rx='6' ry='10' fill='none' stroke='#a78bfa' stroke-width='4'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: alien">
+  <title>AstraGlyph logogram: alien</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <ellipse cx="128.00" cy="99.00" rx="27.30" ry="35.70" />
+    <circle cx="116.45" cy="99.00" r="3.78" fill="black" stroke="black" />
+    <circle cx="139.55" cy="99.00" r="3.78" fill="black" stroke="black" />
+    <line x1="128.00" y1="124.20" x2="128.00" y2="157.80" />
+    <line x1="107.00" y1="132.60" x2="149.00" y2="132.60" />
+  </g>
 </svg>

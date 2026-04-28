@@ -1,4 +1,10 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <rect x='26' y='26' width='48' height='48' rx='12' fill='none' stroke='#67e8f9' stroke-width='4'/><path d='M34 58 C40 48 46 44 50 44 C54 44 60 48 66 58' fill='none' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/><path d='M34 40 H66' stroke='#334155' stroke-width='4' stroke-linecap='round'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: memory">
+  <title>AstraGlyph logogram: memory</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="92.30" y="84.30" width="71.40" height="71.40" />
+    <line x1="102.80" y1="107.40" x2="153.20" y2="107.40" />
+    <line x1="102.80" y1="120.00" x2="153.20" y2="120.00" />
+    <line x1="102.80" y1="132.60" x2="153.20" y2="132.60" />
+  </g>
 </svg>

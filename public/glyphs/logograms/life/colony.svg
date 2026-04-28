@@ -1,4 +1,10 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <circle cx='32' cy='56' r='10' fill='none' stroke='#67e8f9' stroke-width='4'/><circle cx='68' cy='56' r='10' fill='none' stroke='#67e8f9' stroke-width='4'/><circle cx='50' cy='38' r='10' fill='none' stroke='#67e8f9' stroke-width='4'/><path d='M40 44 L32 46 M60 44 L68 46 M50 48 V52' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: colony">
+  <title>AstraGlyph logogram: colony</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="128.00" cy="120.00" r="42.00" />
+    <circle cx="113.30" cy="111.60" r="4.62" fill="black" stroke="black" />
+    <circle cx="142.70" cy="111.60" r="4.62" fill="black" stroke="black" />
+    <circle cx="128.00" cy="134.70" r="4.62" fill="black" stroke="black" />
+  </g>
 </svg>

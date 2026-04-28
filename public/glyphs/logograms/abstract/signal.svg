@@ -1,4 +1,10 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <circle cx='28' cy='50' r='5' fill='#67e8f9'/><path d='M35 50 H82' stroke='#67e8f9' stroke-width='4' stroke-linecap='round'/><path d='M50 34 C60 40 60 60 50 66' fill='none' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/><path d='M64 26 C78 36 78 64 64 74' fill='none' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: signal">
+  <title>AstraGlyph logogram: signal</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="94.40" cy="120.00" r="5.25" fill="black" stroke="black" />
+    <line x1="102.80" y1="120.00" x2="123.80" y2="120.00" />
+    <ellipse cx="140.60" cy="120.00" rx="18.90" ry="12.60" />
+    <ellipse cx="157.40" cy="120.00" rx="31.50" ry="21.00" />
+  </g>
 </svg>

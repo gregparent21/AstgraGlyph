@@ -1,4 +1,11 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <circle cx='50' cy='50' r='6' fill='#a5f3fc'/><path d='M50 14 L57 42 L86 50 L57 58 L50 86 L43 58 L14 50 L43 42 Z' fill='none' stroke='#67e8f9' stroke-width='4'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: star">
+  <title>AstraGlyph logogram: star</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="128.00" cy="120.00" r="7.35" fill="black" stroke="black" />
+    <line x1="128.00" y1="120.00" x2="165.80" y2="120.00" />
+    <line x1="128.00" y1="120.00" x2="90.20" y2="120.00" />
+    <line x1="128.00" y1="120.00" x2="128.00" y2="82.20" />
+    <line x1="128.00" y1="120.00" x2="128.00" y2="157.80" />
+  </g>
 </svg>

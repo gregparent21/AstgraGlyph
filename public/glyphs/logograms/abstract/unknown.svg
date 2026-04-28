@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: unknown">
+  <title>AstraGlyph logogram: unknown</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="128.00" cy="120.00" r="42.00" />
+    <circle cx="128.00" cy="149.40" r="3.78" fill="black" stroke="black" />
+    <text x="128" y="128" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="84" fill="black" stroke="none">?</text>
+  </g>
+</svg>

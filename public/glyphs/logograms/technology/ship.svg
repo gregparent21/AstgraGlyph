@@ -1,4 +1,8 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='#334155' stroke-width='4'/>
-  <path d='M50 18 L78 70 L50 82 L22 70 Z' fill='none' stroke='#67e8f9' stroke-width='4' stroke-linejoin='round'/><path d='M50 26 V78' stroke='#a78bfa' stroke-width='4' stroke-linecap='round'/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="AstraGlyph logogram: ship">
+  <title>AstraGlyph logogram: ship</title>
+  <g stroke="black" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polygon points="165.80,120.00 98.60,86.40 98.60,153.60" />
+    <line x1="90.20" y1="120.00" x2="56.60" y2="120.00" />
+  </g>
 </svg>
