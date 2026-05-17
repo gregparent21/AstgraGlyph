@@ -44,14 +44,7 @@ export default function GlyphCard({ glyph, variant = "palette", onClick }) {
         </div>
 
         <div className="min-w-0 flex-1">
-          <div className="flex items-baseline justify-between gap-2">
-            <div className="truncate text-sm font-semibold">{title}</div>
-            {glyph?.category ? (
-              <div className="shrink-0 rounded-md border border-slate-800 bg-slate-950/40 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-400">
-                {glyph.category}
-              </div>
-            ) : null}
-          </div>
+          <div className="truncate text-sm font-semibold">{title}</div>
           {subtitle ? (
             <div className="mt-0.5 truncate text-xs text-slate-300">
               {subtitle}

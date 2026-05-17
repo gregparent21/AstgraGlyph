@@ -10,26 +10,11 @@ export default function Translator() {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <h2 className="text-lg font-semibold">Translator</h2>
-          <p className="text-sm text-slate-300">
-            Logograms for known concepts; phonetics for everything else.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {DEFAULT_EXAMPLES.slice(0, 3).map((ex) => (
-            <button
-              key={ex}
-              type="button"
-              className="rounded-xl border border-slate-800 bg-slate-950/50 px-3 py-1.5 text-xs text-slate-200 hover:border-cyan-500/40 hover:bg-slate-900/40"
-              onClick={() => setInput(ex)}
-              title={ex}
-            >
-              Example
-            </button>
-          ))}
-        </div>
+      <div>
+        <h2 className="text-lg font-semibold">Translator</h2>
+        <p className="text-sm text-slate-300">
+          Logograms for known concepts; phonetics for everything else.
+        </p>
       </div>
 
       <div className="space-y-2">

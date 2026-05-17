@@ -2,6 +2,7 @@ import { logograms } from "../data/logograms.js";
 import { phonetics } from "../data/phonetics.js";
 import { BLEND_ORDER } from "../data/translatorRules.js";
 import { tokenize } from "./tokenize.js";
+import { normalizeLetters } from "./normalizeLetters.js";
 
 function buildLogogramIndex() {
   const keywordToLogogram = new Map();
@@ -106,7 +107,7 @@ export function translateToAstraGlyph(input) {
       continue;
     }
 
-    out.push(...phoneticizeWord(w));
+    out.push(...phoneticizeWord(normalizeLetters(w)));
   }
 
   return out;

@@ -68,8 +68,7 @@ export default function GlyphPalette() {
       <div>
         <h2 className="text-lg font-semibold">Glyph palette</h2>
         <p className="text-sm text-slate-300">
-          Browse logograms and phonetics (click-to-build is optional and not yet
-          enabled).
+          Browse all logograms and phonetic signs used by the translator.
         </p>
       </div>
 
