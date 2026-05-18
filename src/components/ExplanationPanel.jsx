@@ -54,10 +54,7 @@ export default function ExplanationPanel() {
         </ul>
       </div>
 
-      <div className="text-xs text-slate-400">
-        The point: writing systems don’t just “write speech” — they choose what
-        to encode (sound, meaning, category, memory, technology, worldview).
-      </div>
+      
     </div>
   );
 }

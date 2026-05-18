@@ -488,3 +488,19 @@ Do not implement these unless specifically requested:
 
 This project should feel like a thoughtful creative writing-system artifact first and a CS project second.
 The code should support the course argument: writing systems encode cultural priorities, not just sounds.
+
+##Next Steps
+Implement the following changes:
+The letters C, J, Q and X don’t have a direct translation. Can you follow this:
+C → K before A, O, U, or consonants
+C → S before E, I, Y
+J → D + CH
+Q → QU if followed by U
+Q → K otherwise
+X → Z at the beginning of a word
+X → K + S otherwise
+Can you add 3 tabs on the top, Translator, Sources, Artist Statement. Sources should have 2 spots, each for a source, which should include a description / how it influenced my project as well as a spot for MLA source.The translator should be what is currently built out. The artist statement should include a spot for a pdf essay that I can attach. 
+In the translator page, it says example example example to the right of “translator”. remove remove these buttons  (still include the actual examples you can click under the english input)
+Remove mention of click-to-build. I want to be able to see the sign list on the right but no worries about including the click to build feature. 
+In each of the symbol descriptions/boxes, it says the category (technology, life, consonant, vowel etc). Remove these mentions as it lists above the boxes what category it is. 
+

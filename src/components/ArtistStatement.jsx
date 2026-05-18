@@ -5,13 +5,6 @@ export default function ArtistStatement() {
     <div className="space-y-6">
       <div>
         <h2 className="text-lg font-semibold">Artist statement</h2>
-        <p className="mt-1 text-sm text-slate-300">
-          Place your essay PDF at{" "}
-          <code className="rounded bg-slate-900 px-1.5 py-0.5 text-xs text-cyan-200">
-            public/artist-statement.pdf
-          </code>{" "}
-          to display it below.
-        </p>
       </div>
 
       <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 shadow-lg">

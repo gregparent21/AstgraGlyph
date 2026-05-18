@@ -6,11 +6,7 @@ export default function Sources() {
       <div>
         <h2 className="text-lg font-semibold">Sources</h2>
         <p className="mt-1 text-sm text-slate-300">
-          Research and references that informed AstraGlyph. Edit{" "}
-          <code className="rounded bg-slate-900 px-1.5 py-0.5 text-xs text-cyan-200">
-            src/data/sources.js
-          </code>{" "}
-          with your descriptions and MLA citations.
+          Research and references that influenced and inspired my AstraGlyph writing system.
         </p>
       </div>
 
